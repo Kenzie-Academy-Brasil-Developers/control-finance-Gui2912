@@ -1,0 +1,50 @@
+.none{
+  display: none;
+}
+
+.modal {
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100vw; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: var(--fixed-white);
+  margin: 22% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 428px; 
+  height: 350px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.appearr{
+  animation: var(--animation-duration) appear;
+}
+.modal-content{
+  margin-bottom: 20px;
+}
+.modal-content-header{
+  width: 100%;
+  height: max-content;
+  margin-bottom: 35px;
+}
+
+.modal-content-data{
+  margin: 20px 0;
+}
+
+.modal-content-footer{
+  margin-top: 26px;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

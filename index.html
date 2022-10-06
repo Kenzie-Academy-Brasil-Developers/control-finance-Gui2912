@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Finance</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Control Finance - Seu controle financeiro"
+    />
+    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/positions.css" />
+    <link rel="stylesheet" href="styles/texts.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/inputs.css" />
+    <link rel="stylesheet" href="/pages/home/index.css" />
+    <link rel="stylesheet" href="styles/animation.css">
+  </head>
+  <body>
+    <header class="flex w-full align-center justify-center">
+      <nav class="flex space-between container-width align-center">
+        <h1><span>Control</span> Finance</h1>
+        <button class="new-valor">Registrar novo valor</button>
+      </nav>
+    </header>
+    <main id="app" class="container-width">
+      <section class="header-main flex space-between align-center">
+        <h2>Resumo Financeiro</h2>
+        <div class="header-buttons">
+          <button id="todos">Todos</button>
+          <button id="entradas">Entradas</button>
+          <button id="saidas">Saídas</button>
+        </div>
+      </section>
+      <section class="list-title list-style flex space-between">
+        <h3>Soma dos valores</h3>
+        <span id="total"></span>
+      </section>
+      <ul id="list-cards">
+
+      </ul>
+      <section class="modal none">
+        <div class="modal-content">
+          <div class="modal-content-header flex space-between">
+            <h2>Registro do valor</h2>
+            <button id="close-modal-content" class="flex justify-center align-center">X</button>
+          </div>
+          <p>Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
+          <div class="modal-content-data">
+            <h4>Valor</h4>
+            <input id="inp" type="number" placeholder="R$">
+          </div>
+          <div class="value-type flex align-center ">
+            <p>Tipo de valor</p>
+            <input type="radio" hidden id="entrada" value="1" name="valueType">
+            <label class="bt bt-outline flex button align-center" tabindex="0" for="entrada">Entrada</label>
+            <input type="radio" hidden id="saida" value="2" name="valueType">
+            <label class="bt bt-outline flex button align-center" tabindex="0" for="saida">Saída</label>
+           
+          </div>
+          <div class="modal-content-footer flex flex-end">
+            <button id="cancel">Cancelar</buttonc>
+            <button id="inserir-valor">Inserir valor</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/scripts/modal.js"></script>
+    <script src="/pages/home/valuesData.js"></script>
+    <script src="/pages/home/index.js"></script>
+  </body>
+</html>

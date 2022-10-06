@@ -1,0 +1,42 @@
+.bt{
+  background: #000;
+  margin-left: 10px;
+  color: var(--color-grey-2);
+  font-weight: bold;
+  background-color: var(--color-fixed-white);
+  border: 1px solid var(--color-grey-1);
+  border-radius: var(--radius-2);
+  height: 2rem;
+  padding-inline: var(--font-size-3);
+}
+
+#inp{
+  height: 44px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: var(--radius-1);
+  border: 1px solid var(--color-grey-3);
+  padding: 15px;
+  outline: var(--color-brand-1);
+  
+}
+
+#inp::placeholder{
+  color: var(--color-grey-2);
+  font-weight: 600;
+}
+
+#inp:focus{
+  border-color: var(--color-brand-2);
+}
+
+.value-type label:hover{
+  cursor: pointer;
+  border-color: var(--color-brand-2);
+  color: var(--color-brand-1);
+}
+
+.value-type label:focus{
+  border-color: var(--color-brand-2);
+  color: var(--color-brand-1);
+}
